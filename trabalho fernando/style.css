@@ -1,0 +1,221 @@
+
+/* css */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); /*importação de fonte*/
+
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Mynerve&display=swap'); */
+*{
+    box-sizing: border-box; /*adiciona padding e border ao tamanho da caixa*/
+}
+
+body {
+    margin: 5; /*margem do site*/
+    background-color: #ffffff;
+    font-family: 'Montserrat', sans-serif; /*fonte do site*/
+    background:no-repeat center/cover url('https://www.meutimao.com.br/_upload/wallpapers/arena_corinthians_em_hd_p4_1920x1080.jpg');
+    height: calc(10vh - 15px); /*altura do background*/
+}
+
+ul { /*editar lista do html*/
+    list-style: none; /*remover marcadores*/
+    font-weight: bold; /*negrito*/
+    color: rgb(0, 0, 0); /*cor do texto*/
+}
+
+a { /*link*/
+    text-decoration: none; /*remover sublinhado*/
+    color: #ffffff; /*cor do texto*/
+    text-shadow: rgb(255, 255, 255); /*sombra do texto*/
+    margin: 0 150px; /*margem*/
+}
+
+h2 { /*título*/
+    color: #000000; /*cor do título*/
+    font-size: 20px; /*tamanho da fonte*/
+    font-family: 'Montserrat', sans-serif; /*fonte do título*/
+    font-family: 'Mynerve', cursive; /*fonte do título*/
+}
+
+button { /*botão*/
+    padding: 10px 15px; /*altura e largura*/
+    border-radius: 8px; /*borda do botão*/
+    border: 0; /*sem borda*/
+    font-weight: bold; /*negrito*/
+    color: #ca261b; /*cor do texto*/
+    background-color: #1dc08f; /*cor do fundo*/
+    font-family: 'Montserrat', sans-serif; /*fonte do botão*/
+    font-family: 'Mynerve', cursive; /*fonte do botão*/
+    background-image:url('https://i.pinimg.com/originals/0b/24/e6/0b24e6345b7bc89683576898c21e6091.gif'); /*imagem de fundo*/
+}
+
+header nav {
+    display: flex; /*exibe os elementos em linha*/
+    justify-content: space-between; /*centraliza o conteúdo*/
+    margin: auto 90px; /*margem*/
+}
+
+header nav p {
+    font-weight: bold; /*negrito*/
+}
+
+header nav ul {
+    display: flex; /*exibe os elementos em linha*/
+}
+
+header nav ul li {
+    margin: 0 10px; /*margem*/
+    background: black; /*cor de fundo*/
+    border-radius: 8px 8px 8px 8px; /*borda arredondada*/
+    padding: 0.5px 5px; /*preenchimento*/
+
+}
+
+
+.header-content {
+    max-width: 400px;
+    margin: 150px auto;
+    text-align: center;
+}
+
+.header-content h1 {
+    margin-bottom: 10px;
+    font-size: 4rem;
+}
+
+.pacotes {
+    background-color: rgb(70, 70, 65);
+    padding: 30px;
+    text-align: center;
+}
+
+.pacotes .pacotes-cards{
+    display: flex;
+    margin: auto;
+    max-width: 950px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pacotes .cards{
+    width: 250px;
+    height: 400px;
+    background-color: rgb(253, 253, 253);
+    border-radius: 20px 0;
+    margin: 25px;
+    position: relative;
+}
+
+.pacotes .card-imagen{
+    width: 250px;
+    height: 200px;
+    border-radius: 24px 0 0 0;
+    object-fit: cover;
+}
+
+.pacotes .cards-content h2{
+    font-size: 0.4rem;
+}
+
+.pacotes .cards .card-top{
+    position: absolute;
+    right: 0;
+    top: 15px;
+    background: rgb(0, 174, 255);
+    border-radius: 8px 0 0 8px;
+    padding: 5px 10px;
+
+}
+
+.pacotes .card-tag-bottom {
+    position: absolute;
+    left: 0;
+    top: 160px;
+    background: blue;
+    border-radius: 0 8px 8px 0;
+    padding: 5px 10px;
+}
+
+.pacotes .card-tag p {
+    margin: 0;
+    font-size:  0.8rem;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.servicos {
+    padding: 15px
+}
+
+.servicos .servicos-tittle{
+    text-align: center;
+    margin: 35px 0;
+}
+
+.servicos .servicos-card{
+    margin-top: 25px;
+    display: flex;
+    max-width: 950px;
+    justify-content: left;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.servicos .card{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.servicos .card h3{
+    font-weight: bold;
+}
+
+.servicos .card p{
+    color: grey;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.servicos .card .card-content{
+    height: 180px;
+    text-align: center;
+}
+
+.contato{
+    padding: 60px;
+    background: gray;
+    position: relative;
+    text-align: right;
+}
+
+.contato .contato-card{
+    width: 350px;
+    height: 300px;
+    background: white;
+    position: absolute;
+    z-index: 99;
+    border-radius: 8px;
+    top: calc(50% - 150px);
+    left: calc(20% - 175px);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contato .contato-card li{
+    padding-left: 50px;
+    text-align: left;
+}
+
+.contato .contato-card li{
+    font-size: .9rem;
+    font-weight: bold;
+    color: grey;
+    display: flex;
+    align-items: center;
+}
